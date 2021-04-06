@@ -13,5 +13,20 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajulapudi/tophatrix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajulapudi/tophatrix/issues"
+  },
+  "homepage": "https://github.com/rajulapudi/tophatrix#readme",
+  "description": ""
 }

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html class="no-js" lang="zxx">
+	<%- include('partials/meta.ejs') %>
+	<body>
+		<%- include('partials/header.ejs') %>
+
+		<main>
+			<!--? slider Area Start-->
+			<%- include('partials/hero.ejs') %>
+
+			<!--? Office environment  Start-->
+			<%- include('partials/offic-env.ejs') %>
+
+			<!--? Services Area Start -->
+
+			<!-- About Area Start -->
+			<%- include('partials/about.ejs') %>
+
+			<!-- Home Blog Start (C-studies)-->
+
+			<!--? Testimonial Area Start -->
+
+			<!--? Team Area Start -->
+
+			<!--? Want To work -->
+		</main>
+
+		<%- include('partials/footer.ejs') %>
+		<!-- JS here -->
+		<%- include('partials/scripts.ejs') %>
+	</body>
 </html>
