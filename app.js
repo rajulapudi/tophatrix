@@ -16,21 +16,21 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'template')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-app.get('/', function (req, res) {
-	var options = {
-		root: path.join(__dirname, 'template'),
-	};
+// app.get('/', function (req, res) {
+// 	var options = {
+// 		root: path.join(__dirname, 'template'),
+// 	};
 
-	res.sendFile('index.html', options, function (err) {
-		if (err) {
-			next(err);
-		}
-	});
-});
+// 	res.sendFile('index.html', options, function (err) {
+// 		if (err) {
+// 			next(err);
+// 		}
+// 	});
+// });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

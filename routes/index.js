@@ -6,6 +6,18 @@ router.get('/', function (req, res, next) {
 	res.render('index', { title: 'Express' });
 });
 
+router.get('/training', function (req, res, next) {
+	res.render('training', { title: 'Express' });
+});
+
+router.get('/careers', function (req, res, next) {
+	res.render('career', { title: 'Express' });
+});
+
+router.get('/freelancing', function (req, res, next) {
+	res.render('freelancing', { title: 'Express' });
+});
+
 router.post('/contactus', async (req, res, next) => {
 	console.log('route called');
 	let fname = req.body.fname;
